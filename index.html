@@ -67,8 +67,21 @@
   
 </head>
 
-<body class="mt-0" data-bs-spy="scroll" data-bs-target="#navScroll" style="overflow-x: hidden;">
+<body class="mt-0 loading" data-bs-spy="scroll" data-bs-target="#navScroll" style="overflow-x: hidden;">
   <main>
+    
+    
+    
+    <!--loading screen-->
+    <div class="video-container">
+      <video autoplay muted preload="auto" class="video">
+        <source src="img/glitch1.mp4" type="video/mp4">
+      </video>  
+    </div>
+    <!--loading screen-->
+    <div class="image-container">
+      <img class="black" src="img/black.jpeg">  
+    </div>
     
     <!--Navigation Bar-->
     <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark fixed-top " tabindex="0">
@@ -103,7 +116,9 @@
               </div>
             </div>
           </ul>
+          
         </div>
+        
       </div>
     </nav>
     <!--Navigation Bar-->
@@ -123,7 +138,7 @@
     <!--Progress bar-->
     
     <!--Home Section-->
-    <div id="Home" class="bg-white" style="padding-top: 16vh; padding-bottom: 4vh;">
+    <div id="Home" class="bg-white" style="padding-top: 12vh; padding-bottom: 3vh;">
       <img class="bckgrnd_image1" src="img/blob.jpg">
       <div class="container-fluid">
         <div class="row">
@@ -200,7 +215,7 @@
           </div>
         </div>
       </div>
-
+      
       <!--Bio bar-->
       <div class="news-container my-3 overflow-hidden">
         <div class="title">
@@ -208,9 +223,9 @@
         </div>
         
         <ul>
+          <li>What I do for a living: Simulate fluid flows to predict the perfect swirl in your morning coffee</li>
           <li>Thank you for taking the time to explore my website</li>
-          <li>What I do for living: Simulate fluid flows to predict the perfect swirl in your morning coffee</li>
-          <li>I warmly encourage you to get in touch with me using the contact details provided above</li>
+          <li>Feel free to get in touch with me using the contact details provided above</li>
           <li>Looking forward to connecting with you soon!</li>
         </ul>
       </div>
@@ -247,13 +262,13 @@
                 <p class="badge bg-gray-200 text-black">Sep 2021 - Sep 2022</p>
                 <p class="">
                   Gained an in-depth understanding of fluid dynamics, heat transfer mechanisms, and their practical applications in power generation systems. 
-                  Developed advanced analytical and computational skills, enabling me to solve complex engineering problems and contribute to the design and optimization of efficient and sustainable thermal power systems.                </p>
+                  Developed advanced analytical and computational skills, enabling me to solve complex engineering problems and contribute to the design and optimisation of efficient and sustainable thermal power systems.                </p>
                 </div>
               </div>
             </div>
             
             <div class="timeline-4 right-4 card__container">
-              <div class="card__article" data-aos="fade-up">
+              <div class="card__article" data-aos="zoom-in-up">
                 <div class="card__scale-1"></div>
                 <div class="card__scale-2"></div>
                 <div class="card__shape-1">
@@ -284,7 +299,8 @@
     <!--Experience Timeline-->
     <div id="Experience" class="container-fluid">
       <h2 class="display-1 text-white text-center py-vh-1 bg-transparent">
-        <i class="fas fa-cogs"></i> Experience</h2>
+        <i class="fas fa-cogs"></i> Experience
+      </h2>
     </div>
     
     <div class="bg-white">
@@ -393,7 +409,8 @@
     <!-- Skills Section -->
     <div id="Skills" class="container-fluid">
       <h2 class="display-1 text-white text-center py-vh-1 bg-transparent">
-        <i class="fas fa-university"></i> Skills</h2>
+        <i class="fas fa-university"></i> Skills
+      </h2>
     </div>
     
     <div class="container-fluid bg-white">
@@ -679,7 +696,8 @@
     <!--Projects Section-->
     <div id="Projects" class="container-fluid">
       <h2 class="display-1 text-white text-center py-vh-1 bg-transparent">
-        <i class="fas fa-university"></i> Projects</h2>
+        <i class="fas fa-university"></i> Projects
+      </h2>
     </div>
     
     <div class="bg-white px-vw-5 py-vh-3">
@@ -759,7 +777,7 @@
     <footer>
       <div class="container-fluid small bg-white border-top" >
         <div class="row pt-3 d-flex justify-content-between">
-
+          
           <div class="col">
             <h5 class="glow">My Website</h5>
             <ul class="navbar-nav ms-auto me-auto">
@@ -779,7 +797,7 @@
               </div>
             </ul>
           </div>
-
+          
           <div class="col">
             <h5 class="glow">My Details</h5>
             <div class="row py-3">
@@ -803,16 +821,16 @@
               </div>
             </div>
           </div>
-        
+          
           <div class="col-12 border-top text-center py-vh-1">
-            Copyright <i class="fa fa-copyright"></i> Karim Elbehiri. All rights reserved.
+            Copyright <i class="fa fa-copyright"></i> 2023 Karim Elbehiri. All rights reserved.
           </div>
-
+          
         </div>
       </div>
     </footer>
     <!--Footer Section-->
-
+    
   </main>
   
   <script src="https://kit.fontawesome.com/fd5a894a7b.js" crossorigin="anonymous"></script>
@@ -843,8 +861,15 @@
       if (scrollpos >= header_height) { add_class_on_scroll(); }
       else { remove_class_on_scroll(); }
       
-      console.log(scrollpos);
+      // console.log(scrollpos);
     })
+  </script>
+  <script>
+    $(window).on("load",setTimeout(function(){
+      $(".video-container").fadeOut("fast");
+      $(".image-container").fadeOut("slow");
+      document.body.classList.remove("loading");
+    }, 1600));
   </script>
 </body>
 </html>
