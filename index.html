@@ -67,21 +67,8 @@
   
 </head>
 
-<body class="mt-0 loading" data-bs-spy="scroll" data-bs-target="#navScroll" style="overflow-x: hidden;">
+<body class="mt-0" data-bs-spy="scroll" data-bs-target="#navScroll" style="overflow-x: hidden;">
   <main>
-    
-    
-    
-    <!--loading screen-->
-    <div class="video-container">
-      <video autoplay muted preload="auto" class="video">
-        <source src="img/glitch1.mp4" type="video/mp4">
-      </video>  
-    </div>
-    <!--loading screen-->
-    <div class="image-container">
-      <img class="black" src="img/black.jpeg">  
-    </div>
     
     <!--Navigation Bar-->
     <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark fixed-top " tabindex="0">
@@ -864,12 +851,6 @@
       // console.log(scrollpos);
     })
   </script>
-  <script>
-    $(window).on("load",setTimeout(function(){
-      $(".video-container").fadeOut("fast");
-      $(".image-container").fadeOut("slow");
-      document.body.classList.remove("loading");
-    }, 1600));
-  </script>
+  
 </body>
 </html>
