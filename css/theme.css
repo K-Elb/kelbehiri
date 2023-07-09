@@ -299,12 +299,12 @@
 .hoo:hover {
   transform: scale(1.2);
   background-image: linear-gradient(315deg, #00003c 0%, #1932c8 35%, #857ee5 75%, #c3aaf5 100%);
-  transition: transform 0.3s; /* smooth transition */
+  transition: all 0.3s; /* smooth transition */
 }
 .hoo:hover i {
   transform: scale(1.5);
   color: #2bfe1f;
-  transition: transform 0.3s; /* smooth transition */
+  transition: all 0.2s; /* smooth transition */
 }
 
 .glow {
@@ -512,7 +512,7 @@
 .news-container ul li {
   white-space: nowrap;
   padding: 6px 24px;
-  color: #494949;
+  color: #000;
   position: relative;
 }
 
@@ -536,7 +536,7 @@
   }
 
   to {
-      transform: translateX(-3500px);
+      transform: translateX(-3050px);
 
   }
 }
@@ -1070,6 +1070,12 @@ progress {
   .blockquote-footer::before {
     content: "\2014\00A0"; }
 
+.img { 
+  height: 75px;
+}
+.img-lg { 
+  height: 55px;
+}
 .img-fluid {
   max-width: 100%;
   height: auto; }
@@ -3616,7 +3622,7 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: rgba(255, 255, 255, 0.2);
   --bs-navbar-disabled-color: rgba(255, 255, 255, 0.2);
   --bs-navbar-active-color: rgba(255, 255, 255, 0.2);
-  --bs-navbar-brand-padding-y: 0.275rem;
+  --bs-navbar-brand-padding-y: 0.5rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.3rem;
   --bs-navbar-brand-color: rgba(255, 255, 255, 0.2);
@@ -3956,7 +3962,7 @@ textarea.form-control-lg {
   background-color: #2afe1f }
   
 .navbar.scrolled {
-  padding-top: 4px;
+  padding-top: 8px;
   padding-bottom: 0px;
   background-color: rgba(255, 255, 255, 0.9); }
 
