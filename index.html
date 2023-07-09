@@ -69,12 +69,24 @@
 
 <body class="mt-0" data-bs-spy="scroll" data-bs-target="#navScroll" style="overflow-x: hidden;">
   <main>
+
+    <!--loading screen
+    <div class="video-container">
+      <video autoplay muted preload="auto" class="video">
+        <source src="img/glitch1.mp4" type="video/mp4">
+      </video>  
+    </div>
+    
+    <div class="image-container">
+      <img class="black" src="img/black.jpeg">  
+    </div>
+    loading screen-->
     
     <!--Navigation Bar-->
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark fixed-top " tabindex="0">
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark fixed-top" tabindex="0">
       <div class="container-fluid">
-        <a id="hack" class="navbar-brand" href="#" data-value="Karim Elbehiri">Karim Elbehiri</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+        <a id="hack" class="navbar-brand position-absolute sticky-top" href="#" data-value="Karim Elbehiri">Karim Elbehiri</a>
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="btn-info"><i  id="toggler" class="fas fa-bars" onclick="changeIcon()"></i></span></button>
         
@@ -127,10 +139,10 @@
     <!--Home Section-->
     <div id="Home" class="bg-white" style="padding-top: 12vh; padding-bottom: 3vh;">
       <img class="bckgrnd_image1" src="img/blob.jpg">
-      <div class="container-fluid">
+      <div class="container" style="max-width: 1140px;">
         <div class="row">
           <div class="col p-0 align-self-end text-end">
-            <img src="img/texture.png" style="width: 7vw;">
+            <img src="img/texture.png" style="width: 7vw; max-width: 100px;">
             <p class="display-6 text-center m-0 ms-auto" style="writing-mode: vertical-rl; transform: rotate(180deg); "><code>{Coder}</code> by night</p>
           </div>
           <div class="col-9 p-0">
@@ -143,7 +155,7 @@
           </div>
           <div class="col p-0">
             <p class="display-6 m-0" style="writing-mode: vertical-rl;"><span class="glow">Engineer</span> by day</p>
-            <img src="img/texture.png" style="width: 7vw;">
+            <img src="img/texture.png" style="width: 7vw; max-width: 100px;">
           </div>
         </div>
       </div>
@@ -158,32 +170,33 @@
           <li>مرحباً</li>
           <li>Hola</li>
           <li>你好</li>
+          <li>नमस्ते</li>
+          <li>Kamusta</li>
+          <li>Ciao</li>
           <li>こんにちは</li>
+          <li>Merhaba</li>
+          <li>Hallo</li>
           <li>안녕하세요</li>
           <li>привет</li>
-          <li>Hallo</li>
-          <li>Merhaba</li>
           <li>Hei</li>
           <li>Bonjour</li>
           <li>안녕하세요</li>
           <li>Hallå</li>
           <li>Hej</li>
           <li>Xin chào</li>
+          <li>สวัสดี</li>
           <li>Salut</li>
           <li>Ahoj</li>
           <li>привіт</li>
+          <li>ഹലോ</li>
           <li>Zdravo</li>
           <li>Helo</li>
-          <li>नमस्ते</li>
-          <li>สวัสดี</li>
-          <li>Ciao</li>
           <li>Përshëndetje</li>
-          <li>Kamusta</li>
-          <li>ഹലോ</li>
         </ul>
       </div>
       <!--News bar-->
       
+      <!--Contact info-->
       <div class="container-fluid py-vh-1">
         <div class="row">
           <div class="col">
@@ -206,18 +219,19 @@
           </div>
         </div>
       </div>
-      
+      <!--Contact info-->
+
       <!--Bio bar-->
       <div class="news-container my-3 overflow-hidden">
         <div class="title">
-          Profile
+          Bio
         </div>
         
         <ul>
+          <li>Thank you for taking the time to visit & explore my portfolio</li>
           <li>What I do for a living: Simulate fluid flows to predict the perfect swirl in your morning coffee</li>
-          <li>Thank you for taking the time to explore my website</li>
-          <li>Feel free to get in touch with me using the contact details provided above</li>
-          <li>Looking forward to connecting with you soon!</li>
+          <li>Feel free to get in touch with me using any of my contact details</li>
+          <li>Looking forward to speaking with you!</li>
         </ul>
       </div>
       <!--Bio bar-->
@@ -428,67 +442,67 @@
           <div class="row accordion-body text-black">
             <div class="col">
               <div class="card__article">
-                <img src="img/fusion360.png" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/fusion360.png" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>Fusion 360</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/autocad.png" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/autocad.png" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>Autocad</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/freecad.png" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/freecad.png" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>FreeCAD</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/solidworks.png" alt="abstract image" class="img" style="width: 50vw;" loading="lazy">
+                <img src="img/solidworks.png" alt="abstract image" class="img-lg" loading="lazy">
               </div>
               <p>SolidWorks</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/ces-edupack.jpg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/ces-edupack.jpg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>CES EduPack</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/labview.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/labview.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>LabVIEW</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/paraview.png" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/paraview.png" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>ParaView</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/matlab.png" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/matlab.png" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>Matlab</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/starccm.png" alt="abstract image" class="img" style="width: 50vw;" loading="lazy">
+                <img src="img/starccm.png" alt="abstract image" class="img-lg" loading="lazy">
               </div>
               <p>StarCCM</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/openfoam.png" alt="abstract image" class="img" style="width: 50vw;" loading="lazy">
+                <img src="img/openfoam.png" alt="abstract image" class="img-lg" loading="lazy">
               </div>
               <p>OpenFoam</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/ansys.png" alt="abstract image" class="img" style="width: 50vw;" loading="lazy">
+                <img src="img/ansys.png" alt="abstract image" class="img-lg" loading="lazy">
               </div>
               <p>Ansys</p>
             </div>
@@ -502,43 +516,43 @@
           <div class="row accordion-body text-black">
             <div class="col">
               <div class="card__article">
-                <img src="img/c++.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/c++.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>C++</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/python.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/python.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>Python</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/java.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/java.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>JavaScript</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/html5.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/html5.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>HTML</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/css.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/css.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>CSS</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/swift.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/swift.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>Swift</p>
             </div>
             <div class="col">
               <div class="card__article">
-                <img src="img/linux.svg" alt="abstract image" class="img" style="height: 75px;" loading="lazy">
+                <img src="img/linux.svg" alt="abstract image" class="img" loading="lazy">
               </div>
               <p>Linux</p>
             </div>
@@ -855,6 +869,12 @@
       // console.log(scrollpos);
     })
   </script>
-  
+  <!-- <script>
+    $(window).on("load",setTimeout(function(){
+      $(".video-container").fadeOut("fast");
+      $(".image-container").fadeOut("slow");
+      document.body.classList.remove("loading");
+    }, 1600));
+  </script> -->
 </body>
 </html>
